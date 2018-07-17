@@ -7,6 +7,11 @@
 
         <title>Movies</title>
     </head>
+
+    @extends('layouts.master')
+
+    @section('content')
+
     <body>
     @foreach($movies as $movie)
     <a href="{{'/movies/'.$movie->id}}">
@@ -16,4 +21,6 @@
     
     @endforeach
     </body>
+
+    @endsection
 </html>
