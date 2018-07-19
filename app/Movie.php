@@ -10,4 +10,9 @@ class Movie extends Model
 
         "title","genre","director","year","storyline"
     ];
+
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
+    }
 }

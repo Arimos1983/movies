@@ -14,7 +14,7 @@ class MoviesController extends Controller
     }
     public function show($id)
     {
-        $movie = Movie::all()->find($id);
+        $movie = Movie::with('comments')->find($id);
         return view('/movie', compact('movie'));
     }
     public function create()
