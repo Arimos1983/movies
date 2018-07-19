@@ -1,5 +1,3 @@
-<link href="/css/bootstrap.min.css" rel="stylesheet">
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,11 +7,11 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Fixed top navbar example for Bootstrap</title>
+    <title>Top navbar example for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/css/app.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="navbar-top-fixed.css" rel="stylesheet">
+    <link href="navbar-top.css" rel="stylesheet">
   </head>
