@@ -19,3 +19,7 @@ Route::get('/', function () {
 Route::get("/movies", 'MoviesController@index');
 
 Route::get('movies/{id}', 'MoviesController@show');
+
+Route::get('/create', 'MoviesController@create');
+
+Route::post('/movies', 'MoviesController@store');
