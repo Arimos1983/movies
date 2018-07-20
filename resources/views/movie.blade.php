@@ -16,5 +16,17 @@
         {{$comment->created_at}}<br><hr>
     @endforeach    
 </div>
+<div class="container">
+    <h4>Post comment.</h4>
+    <form method="POST" action="{{'/comments/add/'.$movie->id}}">
+        {{ csrf_field() }}
+        <div>
+            <label for="content">Comment</label>
+            <textarea name="content" class="form-control" id="content"></textarea>
+            @include("partials.error", ["fieldName" => "content"])
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
 
 @endsection

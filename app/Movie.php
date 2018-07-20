@@ -15,4 +15,8 @@ class Movie extends Model
     {
         return $this->hasMany(Comment::class);
     }
+    protected function published()
+    {
+        return self::get();
+    }
 }
