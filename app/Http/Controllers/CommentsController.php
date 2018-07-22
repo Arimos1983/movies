@@ -21,3 +21,6 @@ class CommentsController extends Controller
         return redirect('/movies/'.$movie->id);
     }
 }
+
+
+
