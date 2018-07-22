@@ -14,8 +14,12 @@
         
       </div>
     </nav>
+    
+      
 
     @yield('content')
+
+    
     
 
     <!-- Bootstrap core JavaScript

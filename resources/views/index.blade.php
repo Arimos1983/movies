@@ -2,7 +2,8 @@
 @extends('layouts.master')
 
 @section('content')
-<div>
+<div class="row">
+<div class="col-sm-8 blog-main">
     <ul>
     @foreach($movies as $movie)
         <a href="{{'/movies/'.$movie->id}}">
@@ -12,5 +13,9 @@
     @endforeach
     </ul>
 </div>
+@include('layouts.sidebar')
+</div>
 @endsection
+
+
 

@@ -4,7 +4,7 @@
 @section('content')
 <div>
     <p>Movie title: {{ $movie->title }}</p>
-    <p>Genre: <a target="_blank" href="{{'/genres/'.$movie->genre}}">{{ $movie->genre }}</a></p>
+    <p>Genre: <a href="{{'/genres/'.$movie->genre}}">{{ $movie->genre }}</a></p>
     <p>Director: {{ $movie->director }}</p>
     <p>Year: {{ $movie->year }}</p>
     <p>Storyline: {{ $movie->storyline }}</p>
